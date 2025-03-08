@@ -1,46 +1,97 @@
-# Getting Started with Create React App
+# HederaMart - Decentralized Marketplace on Hedera
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+HederaMart is a decentralized e-commerce platform built on the Hedera network, enabling secure peer-to-peer transactions using HBAR cryptocurrency. The platform features a smart contract-based escrow system, seamless HashPack wallet integration, and transparent transaction records.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- 🛍️ **Decentralized Marketplace**: List and browse products with detailed information
+- 💰 **HBAR Payments**: Secure transactions using Hedera's native cryptocurrency
+- 🔒 **Smart Contract Escrow**: Automated escrow system for safe trading
+- 👛 **HashPack Integration**: Easy wallet connection and transaction signing
+- 📝 **Transaction Records**: All transactions stored on Hedera for transparency
+- 🖼️ **File Storage**: Product images stored using Hedera File Service
+- 🎨 **Modern UI**: Beautiful and responsive design with Tailwind CSS
+- ⚡ **Real-time Updates**: Instant transaction status updates
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Node.js v14 or higher
+- HashPack wallet browser extension
+- HBAR tokens for transactions
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/hederamart.git
+cd hederamart
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install dependencies:
+```bash
+npm install
+```
 
-### `npm run build`
+3. Create a `.env` file in the root directory:
+```env
+REACT_APP_MARKETPLACE_CONTRACT_ID=your_contract_id
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Start the development server:
+```bash
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Smart Contract
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The marketplace smart contract (`Marketplace.sol`) includes:
 
-### `npm run eject`
+- Product listing management
+- Escrow system for secure transactions
+- Platform fees handling
+- Dispute resolution mechanism
+- Admin controls for platform management
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Architecture
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Frontend**: React.js with TypeScript
+- **Styling**: Tailwind CSS
+- **Blockchain**: Hedera Network
+- **Smart Contract**: Solidity
+- **Wallet**: HashPack Integration
+- **File Storage**: Hedera File Service
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Security Features
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Non-custodial transactions
+- Smart contract-based escrow
+- Automated fund release
+- Dispute resolution system
+- Rate limiting
+- Input validation
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Hedera Network
+- HashPack Wallet
+- OpenZeppelin Contracts
+- React.js Community
+- Tailwind CSS Team
+
+## Contact
+
+Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
+
+Project Link: [https://github.com/yourusername/hederamart](https://github.com/yourusername/hederamart)
